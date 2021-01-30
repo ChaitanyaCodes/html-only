@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -145,7 +146,7 @@
                 </font>
             </h3>
             <br><br>
-            <form name="f1" id="bookRequest">
+            <form name="f1" id="bookRequest" action="https://send.pageclip.co/oGcXQsfDBQF4OKZj4upQpXvcWiH5iXbH" class="pageclip-form" method="post">
                 <table align="center" cellpadding="5" cellspacing="12" border="1" height="200">
                   <tr>
                     <td>
@@ -160,16 +161,18 @@
                     <td><input type="text" name="genre" placeholder="Genre" required="required" /></td>
                   </tr>
                   <tr>
-                      <th colspan="2"><textarea placeholder="Enter Book Name" required=""></textarea></th>
+                      <th colspan="2"><textarea placeholder="Enter Book Name" name="BookName" required=""></textarea></th>
                   </tr>
                   <tr>
                     <th colspan="2">
-                      <textarea placeholder="Enter Message" required=""></textarea>
+                      <textarea placeholder="Enter Message" name="message" required=""></textarea>
                     </th>
                   </tr>
                   <tr>
                     <th colspan="2">
-                      <input type="submit" name="contact-submit" value="SEND">
+                      <button type="submit" class="pageclip-form__submit">
+                        <span>Send</span>
+                      </button>
                     </th>
                   </tr>
                 </table>
@@ -198,6 +201,7 @@
         </div>
 
 
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
   </body>
 </html>
